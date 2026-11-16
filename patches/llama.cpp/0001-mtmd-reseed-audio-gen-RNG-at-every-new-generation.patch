@@ -1,0 +1,123 @@
+From 7826817ca94cfd69acb8152ff15cce8bf2c100cc Mon Sep 17 00:00:00 2001
+From: oido <oido@localhost>
+Date: Mon, 16 Nov 2026 23:42:32 +0100
+Subject: [PATCH] mtmd: reseed audio-gen RNG at every new generation
+
+---
+ tools/mtmd/clip.cpp            | 10 ++++++++--
+ tools/mtmd/clip.h              |  3 +++
+ tools/mtmd/mtmd-helper-gen.cpp |  4 ++++
+ tools/mtmd/mtmd.cpp            |  6 ++++++
+ tools/mtmd/mtmd.h              |  4 ++++
+ 5 files changed, 25 insertions(+), 2 deletions(-)
+
+diff --git a/tools/mtmd/clip.cpp b/tools/mtmd/clip.cpp
+index f437040..8c26633 100644
+--- a/tools/mtmd/clip.cpp
++++ b/tools/mtmd/clip.cpp
+@@ -174,9 +174,10 @@ struct clip_ctx {
+ 
+     bool support_batch = false;
+ 
+-    // for audio gen, reseeded only when the caller asks for another seed
++    // for audio gen, reseeded when the caller asks for another seed or a new generation starts
+     std::mt19937 rng{std::random_device{}()};
+     uint32_t rng_seed = UINT32_MAX;
++    bool rng_reseed = true;
+ 
+     clip_ctx(clip_context_params & ctx_params) {
+         flash_attn_type = ctx_params.flash_attn_type;
+@@ -4495,7 +4496,8 @@ bool clip_encode(struct clip_ctx * ctx, struct clip_encode_params * params) {
+         clip_model_loader::warmup(*ctx, *params->imgs);
+     }
+ 
+-    if (params->seed != ctx->rng_seed) {
++    if (ctx->rng_reseed || params->seed != ctx->rng_seed) {
++        ctx->rng_reseed = false;
+         ctx->rng_seed = params->seed;
+         ctx->rng.seed(params->seed == UINT32_MAX ? std::random_device{}() : params->seed);
+     }
+@@ -6147,3 +6149,7 @@ std::map<ggml_backend_dev_t, size_t> clip_get_mem_usage(const struct clip_ctx *
+ void clip_set_debug_output_embeddings(clip_ctx * ctx, bool enable) {
+     ctx->debug_output_embeddings = enable;
+ }
++
++void clip_gen_reset_rng(struct clip_ctx * ctx) {
++    ctx->rng_reseed = true;
++}
+diff --git a/tools/mtmd/clip.h b/tools/mtmd/clip.h
+index 9e12702..d9623d4 100644
+--- a/tools/mtmd/clip.h
++++ b/tools/mtmd/clip.h
+@@ -122,6 +122,9 @@ struct clip_encode_params {
+ };
+ bool clip_encode(struct clip_ctx * ctx, struct clip_encode_params * params);
+ 
++// audio gen: reseed the RNG on the next encode even if the seed is unchanged
++void clip_gen_reset_rng(struct clip_ctx * ctx);
++
+ bool clip_is_llava(const struct clip_ctx * ctx);
+ // note for contributor: this clip_is_(model) pattern is deprecated
+ //                       do NOT add new functions like this
+diff --git a/tools/mtmd/mtmd-helper-gen.cpp b/tools/mtmd/mtmd-helper-gen.cpp
+index 5fb7ea9..2a5f7ea 100644
+--- a/tools/mtmd/mtmd-helper-gen.cpp
++++ b/tools/mtmd/mtmd-helper-gen.cpp
+@@ -1004,11 +1004,13 @@ static std::unique_ptr<mtmd_gen_audio_pipeline> make_pipeline(llama_context * lc
+ 
+ struct mtmd_helper_gen_audio {
+     std::unique_ptr<mtmd_gen_audio_pipeline> pipeline;
++    mtmd_context * mctx = nullptr;
+ };
+ 
+ mtmd_helper_gen_audio * mtmd_helper_gen_audio_init(struct llama_context * lctx, struct mtmd_context * mctx) {
+     auto * ctx = new mtmd_helper_gen_audio();
+     ctx->pipeline = make_pipeline(lctx, mctx);
++    ctx->mctx     = mctx;
+     return ctx;
+ }
+ 
+@@ -1027,6 +1029,8 @@ int32_t mtmd_helper_gen_audio_set_input(mtmd_helper_gen_audio * ctx, const mtmd_
+         LOG_ERR("mtmd_helper_gen_audio: unsupported or missing gen-audio pipeline\n");
+         return 1;
+     }
++    // every input is a new generation: same seed must give the same audio as a fresh process
++    mtmd_gen_audio_reset_rng(ctx->mctx);
+     return ctx->pipeline->set_input(inp);
+ }
+ 
+diff --git a/tools/mtmd/mtmd.cpp b/tools/mtmd/mtmd.cpp
+index 9e7b1cc..9b2f7ee 100644
+--- a/tools/mtmd/mtmd.cpp
++++ b/tools/mtmd/mtmd.cpp
+@@ -1876,6 +1876,12 @@ float * mtmd_get_output_embd(mtmd_context * ctx) {
+ // audio generation
+ //
+ 
++void mtmd_gen_audio_reset_rng(mtmd_context * ctx) {
++    if (ctx->ctx_gen_a) {
++        clip_gen_reset_rng(ctx->ctx_gen_a);
++    }
++}
++
+ mtmd_gen_audio_info mtmd_gen_audio_get_info(const mtmd_context * ctx) {
+     mtmd_gen_audio_info info{};
+     info.model_variant = "";
+diff --git a/tools/mtmd/mtmd.h b/tools/mtmd/mtmd.h
+index bcd76a9..bc97158 100644
+--- a/tools/mtmd/mtmd.h
++++ b/tools/mtmd/mtmd.h
+@@ -381,6 +381,10 @@ struct mtmd_gen_audio_info {
+ 
+ MTMD_API struct mtmd_gen_audio_info mtmd_gen_audio_get_info(const mtmd_context * ctx);
+ 
++// start a new generation: the next process() call reseeds its RNG even if the seed is unchanged,
++// so a resident context reproduces the output of a fresh one for the same seed
++MTMD_API void mtmd_gen_audio_reset_rng(mtmd_context * ctx);
++
+ 
+ enum mtmd_gen_process_type {
+     MTMD_GEN_PROCESS_TYPE_GEN_CODE, // h_state to semantic (codes, mel-spectrogram, etc.)
+-- 
+2.56.0
+

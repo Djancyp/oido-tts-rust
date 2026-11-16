@@ -1,0 +1,5567 @@
+[
+ {
+  "input": "",
+  "chunks": null,
+  "segments": null,
+  "turns": null
+ },
+ {
+  "input": "   ",
+  "chunks": null,
+  "segments": null,
+  "turns": null
+ },
+ {
+  "input": "   \n\n  ",
+  "chunks": null,
+  "segments": null,
+  "turns": null
+ },
+ {
+  "input": "    *) shift;;\n",
+  "chunks": [
+   "*) shift;;"
+  ],
+  "segments": [
+   {
+    "Text": "*) shift;;",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "    --output) out=\"$2\"; shift 2;;\n",
+  "chunks": [
+   "--output) out=\"$2\"; shift 2;;"
+  ],
+  "segments": [
+   {
+    "Text": "--output) out=\"$2\"; shift 2;;",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "    --tts-script) scriptfile=\"$2\"; shift 2;;\n",
+  "chunks": [
+   "--tts-script) scriptfile=\"$2\"; shift 2;;"
+  ],
+  "segments": [
+   {
+    "Text": "--tts-script) scriptfile=\"$2\"; shift 2;;",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "    -p) text=\"$2\"; shift 2;;\n",
+  "chunks": [
+   "-p) text=\"$2\"; shift 2;;"
+  ],
+  "segments": [
+   {
+    "Text": "-p) text=\"$2\"; shift 2;;",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "    echo \"spoke: $t\" \u003e \"$o\"\n",
+  "chunks": [
+   "echo \"spoke: $t\" \u003e \"$o\""
+  ],
+  "segments": [
+   {
+    "Text": "echo \"spoke: $t\" \u003e \"$o\"",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "    i=$((i+1))\n",
+  "chunks": [
+   "i=$((i+1))"
+  ],
+  "segments": [
+   {
+    "Text": "i=$((i+1))",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "    o=$(echo \"$outs\" | sed -n \"${i}p\")\n",
+  "chunks": [
+   "o=$(echo \"$outs\" | sed -n \"${i}p\")"
+  ],
+  "segments": [
+   {
+    "Text": "o=$(echo \"$outs\" | sed -n \"${i}p\")",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "  case \"$1\" in\n",
+  "chunks": [
+   "case \"$1\" in"
+  ],
+  "segments": [
+   {
+    "Text": "case \"$1\" in",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "  done\n",
+  "chunks": [
+   "done"
+  ],
+  "segments": [
+   {
+    "Text": "done",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "  echo \"spoke: $text\" \u003e \"$out\"\n",
+  "chunks": [
+   "echo \"spoke: $text\" \u003e \"$out\""
+  ],
+  "segments": [
+   {
+    "Text": "echo \"spoke: $text\" \u003e \"$out\"",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "  esac\n",
+  "chunks": [
+   "esac"
+  ],
+  "segments": [
+   {
+    "Text": "esac",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "  grep -o '\"text\":\"[^\"]*\"' \"$scriptfile\" | sed 's/.*:\"//;s/\"$//' | while IFS= read -r t; do\n",
+  "chunks": [
+   "grep -o '\"text\":\"[^\"]*\"' \"$scriptfile\" | sed 's/.*:\"//;s/\"$//' | while IFS= read -r t; do"
+  ],
+  "segments": [
+   {
+    "Text": "grep -o '\"text\":\"",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "*\"' \"$scriptfile\" | sed 's/.*:\"//;s/\"$//' | while IFS= read -r t; do",
+    "Instruct": "^\"",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "  i=1\n",
+  "chunks": [
+   "i=1"
+  ],
+  "segments": [
+   {
+    "Text": "i=1",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "  outs=$(grep -o '\"out\":\"[^\"]*\"' \"$scriptfile\" | sed 's/.*:\"//;s/\"$//')\n",
+  "chunks": [
+   "outs=$(grep -o '\"out\":\"[^\"]*\"' \"$scriptfile\" | sed 's/.*:\"//;s/\"$//')"
+  ],
+  "segments": [
+   {
+    "Text": "outs=$(grep -o '\"out\":\"",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "*\"' \"$scriptfile\" | sed 's/.*:\"//;s/\"$//')",
+    "Instruct": "^\"",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": " Dr.Jones then walked into ",
+  "chunks": [
+   "Dr.Jones then walked into"
+  ],
+  "segments": [
+   {
+    "Text": "Dr.Jones then walked into",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "!!!",
+  "chunks": [
+   "!!!"
+  ],
+  "segments": [
+   {
+    "Text": "!!!",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "\"\nwhile [ \"$#\" -gt 0 ]; do\n  if [ \"$1\" = \"--output\" ]; then\n    shift\n    echo \"fake wav data\" \u003e \"$1\"\n    break\n  fi\n  shift\ndone\nexit 0\n",
+  "chunks": [
+   "\"\nwhile [ \"$#\" -gt 0 ]; do\n  if [ \"$1\" = \"--output\" ];",
+   "then\n    shift\n    echo \"fake wav data\" \u003e \"$1\"\n    break\n  fi\n  shift\ndone\nexit 0"
+  ],
+  "segments": [
+   {
+    "Text": "\"\nwhile",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "; do\n  if",
+    "Instruct": " \"$#\" -gt 0 ",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "; then\n    shift\n    echo \"fake wav data\" \u003e \"$1\"\n    break\n  fi\n  shift\ndone\nexit 0",
+    "Instruct": " \"$1\" = \"--output\" ",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "\"Everyone\" is a phone book. Pick one segment.\n",
+  "chunks": [
+   "\"Everyone\" is a phone book. Pick one segment."
+  ],
+  "segments": [
+   {
+    "Text": "\"Everyone\" is a phone book. Pick one segment.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "#!/bin/sh\n",
+  "chunks": [
+   "#!/bin/sh"
+  ],
+  "segments": [
+   {
+    "Text": "#!/bin/sh",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "#!/bin/sh\necho invoked \u003e\u003e \"",
+  "chunks": [
+   "#!/bin/sh\necho invoked \u003e\u003e \""
+  ],
+  "segments": [
+   {
+    "Text": "#!/bin/sh\necho invoked \u003e\u003e \"",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "%s.wav should NOT have been evicted",
+  "chunks": [
+   "%s.wav should NOT have been evicted"
+  ],
+  "segments": [
+   {
+    "Text": "%s.wav should NOT have been evicted",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": ", then we bake it until golden brown.",
+  "chunks": [
+   ", then we bake it until golden brown."
+  ],
+  "segments": [
+   {
+    "Text": ", then we bake it until golden brown.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "...",
+  "chunks": [
+   "..."
+  ],
+  "segments": [
+   {
+    "Text": "...",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": ".tmp",
+  "chunks": [
+   ".tmp"
+  ],
+  "segments": [
+   {
+    "Text": ".tmp",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": ".wav",
+  "chunks": [
+   ".wav"
+  ],
+  "segments": [
+   {
+    "Text": ".wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "/tmp/does-not-matter.wav",
+  "chunks": [
+   "/tmp/does-not-matter.wav"
+  ],
+  "segments": [
+   {
+    "Text": "/tmp/does-not-matter.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "0123456789",
+  "chunks": [
+   "0123456789"
+  ],
+  "segments": [
+   {
+    "Text": "0123456789",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "1.Gather",
+  "chunks": [
+   "1. Gather"
+  ],
+  "segments": [
+   {
+    "Text": "1.Gather",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "2. Offer",
+  "chunks": [
+   "2. Offer"
+  ],
+  "segments": [
+   {
+    "Text": "2. Offer",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "2. Offer\n",
+  "chunks": [
+   "2. Offer"
+  ],
+  "segments": [
+   {
+    "Text": "2. Offer",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "2. Offer\nOutbound doesn't fix a weak offer. It exposes it.",
+  "chunks": [
+   "2. Offer\nOutbound doesn't fix a weak offer.",
+   "It exposes it."
+  ],
+  "segments": [
+   {
+    "Text": "2. Offer\nOutbound doesn't fix a weak offer. It exposes it.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "2.1",
+  "chunks": [
+   "2.1"
+  ],
+  "segments": [
+   {
+    "Text": "2.1",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "2.Mix",
+  "chunks": [
+   "2. Mix"
+  ],
+  "segments": [
+   {
+    "Text": "2.Mix",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "3. ICP\n",
+  "chunks": [
+   "3. ICP"
+  ],
+  "segments": [
+   {
+    "Text": "3. ICP",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "3.5",
+  "chunks": [
+   "3.5"
+  ],
+  "segments": [
+   {
+    "Text": "3.5",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "3.Bake",
+  "chunks": [
+   "3. Bake"
+  ],
+  "segments": [
+   {
+    "Text": "3.Bake",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "After the long meeting concluded everyone packed up their notes and left quietly.",
+  "chunks": [
+   "After the long meeting concluded everyone packed up their notes and left quietly."
+  ],
+  "segments": [
+   {
+    "Text": "After the long meeting concluded everyone packed up their notes and left quietly.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Anyway, let's get into it.",
+  "chunks": [
+   "Anyway, let's get into it."
+  ],
+  "segments": [
+   {
+    "Text": "Anyway, let's get into it.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Are you serious right now?!Yes, completely serious, and I would do it again without hesitation.",
+  "chunks": [
+   "Are you serious right now?! Yes, completely serious, and I would do it again without hesitation."
+  ],
+  "segments": [
+   {
+    "Text": "Are you serious right now?!Yes, completely serious, and I would do it again without hesitation.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Conversations.This",
+  "chunks": [
+   "Conversations. This"
+  ],
+  "segments": [
+   {
+    "Text": "Conversations.This",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Deal size under €5k? Outbound won't pay off.",
+  "chunks": [
+   "Deal size under €5k? Outbound won't pay off."
+  ],
+  "segments": [
+   {
+    "Text": "Deal size under €5k? Outbound won't pay off.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Deal size under €5k? Outbound won't pay off.\n",
+  "chunks": [
+   "Deal size under €5k? Outbound won't pay off."
+  ],
+  "segments": [
+   {
+    "Text": "Deal size under €5k? Outbound won't pay off.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Dr.Jones",
+  "chunks": [
+   "Dr.Jones"
+  ],
+  "segments": [
+   {
+    "Text": "Dr.Jones",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Dr.Jones will see you now in the east wing office.",
+  "chunks": [
+   "Dr.Jones will see you now in the east wing office."
+  ],
+  "segments": [
+   {
+    "Text": "Dr.Jones will see you now in the east wing office.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "First line ends here.Second line starts right after.\nThird line is separate.Fourth line is glued too.",
+  "chunks": [
+   "First line ends here. Second line starts right after.",
+   "Third line is separate. Fourth line is glued too."
+  ],
+  "segments": [
+   {
+    "Text": "First line ends here.Second line starts right after.\nThird line is separate.Fourth line is glued too.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "First part.",
+  "chunks": [
+   "First part."
+  ],
+  "segments": [
+   {
+    "Text": "First part.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "First part. [pause:0s] Second part.",
+  "chunks": [
+   "First part. [pause:0s] Second part."
+  ],
+  "segments": [
+   {
+    "Text": "First part.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Second part.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "First part. [pause:2s] Second part.",
+  "chunks": [
+   "First part. [pause:2s] Second part."
+  ],
+  "segments": [
+   {
+    "Text": "First part.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Second part.",
+    "Instruct": "",
+    "GapBeforeMs": 2000
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "First point here.Second point right after.Third point glued on too.Fourth point closes it out nicely.",
+  "chunks": [
+   "First point here. Second point right after. Third point glued on too.",
+   "Fourth point closes it out nicely."
+  ],
+  "segments": [
+   {
+    "Text": "First point here.Second point right after.Third point glued on too.Fourth point closes it out nicely.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "First we gather the ingredients, then we mix the batter carefully, next we preheat the oven to the right temperature, and finally we bake it until golden brown and delicious",
+  "chunks": [
+   "First we gather the ingredients, then we mix the batter carefully,",
+   "next we preheat the oven to the right temperature,",
+   "and finally we bake it until golden brown and delicious"
+  ],
+  "segments": [
+   {
+    "Text": "First we gather the ingredients, then we mix the batter carefully, next we preheat the oven to the right temperature, and finally we bake it until golden brown and delicious",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "First, ",
+  "chunks": [
+   "First,"
+  ],
+  "segments": [
+   {
+    "Text": "First,",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "GUEST",
+  "chunks": [
+   "GUEST"
+  ],
+  "segments": [
+   {
+    "Text": "GUEST",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "GUEST: [pause:500ms] Wait, really? [shocked]",
+  "chunks": [
+   "GUEST: [pause:500ms] Wait, really? [shocked]"
+  ],
+  "segments": [
+   {
+    "Text": "GUEST:",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Wait, really?",
+    "Instruct": "",
+    "GapBeforeMs": 500
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "GUEST",
+    "Text": "Wait, really?",
+    "Instruct": "shocked",
+    "GapBeforeMs": 500
+   }
+  ]
+ },
+ {
+  "input": "GapBeforeMs = %d, want 500",
+  "chunks": [
+   "GapBeforeMs = %d, want 500"
+  ],
+  "segments": [
+   {
+    "Text": "GapBeforeMs = %d, want 500",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "GapBeforeMs = %d, want NoGap",
+  "chunks": [
+   "GapBeforeMs = %d, want NoGap"
+  ],
+  "segments": [
+   {
+    "Text": "GapBeforeMs = %d, want NoGap",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Guest 2",
+  "chunks": [
+   "Guest 2"
+  ],
+  "segments": [
+   {
+    "Text": "Guest 2",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Guest 2: Hello there.",
+  "chunks": [
+   "Guest 2: Hello there."
+  ],
+  "segments": [
+   {
+    "Text": "Guest 2: Hello there.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "Guest 2",
+    "Text": "Hello there.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "HOST",
+  "chunks": [
+   "HOST"
+  ],
+  "segments": [
+   {
+    "Text": "HOST",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "HOST: I can't believe you actually did that. [shocked, a little panicked]\n\nGUEST: Relax, it's fine.",
+  "chunks": [
+   "HOST: I can't believe you actually did that.",
+   "[shocked, a little panicked]\n\nGUEST: Relax, it's fine."
+  ],
+  "segments": [
+   {
+    "Text": "HOST: I can't believe you actually did that.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "GUEST: Relax, it's fine.",
+    "Instruct": "shocked, a little panicked",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "HOST",
+    "Text": "I can't believe you actually did that.",
+    "Instruct": "shocked, a little panicked",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Speaker": "GUEST",
+    "Text": "Relax, it's fine.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "HOST: One.\n\nGUEST: Two.\n\nHOST: Three.",
+  "chunks": [
+   "HOST: One. GUEST: Two. HOST: Three."
+  ],
+  "segments": [
+   {
+    "Text": "HOST: One.\n\nGUEST: Two.\n\nHOST: Three.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "HOST",
+    "Text": "One.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Speaker": "GUEST",
+    "Text": "Two.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Speaker": "HOST",
+    "Text": "Three.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "HOST: So anyway, I was thinking...\n\nGUEST: [pause:-300ms] Yeah, totally!",
+  "chunks": [
+   "HOST: So anyway, I was thinking... GUEST: [pause:-300ms] Yeah, totally!"
+  ],
+  "segments": [
+   {
+    "Text": "HOST: So anyway, I was thinking...\n\nGUEST:",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Yeah, totally!",
+    "Instruct": "",
+    "GapBeforeMs": -300
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "HOST",
+    "Text": "So anyway, I was thinking...",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Speaker": "GUEST",
+    "Text": "Yeah, totally!",
+    "Instruct": "",
+    "GapBeforeMs": -300
+   }
+  ]
+ },
+ {
+  "input": "HOST: This is a long thought\nthat wraps onto a second line\nand even a third.",
+  "chunks": [
+   "HOST: This is a long thought\nthat wraps onto a second line\nand even a third."
+  ],
+  "segments": [
+   {
+    "Text": "HOST: This is a long thought\nthat wraps onto a second line\nand even a third.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "HOST",
+    "Text": "This is a long thought that wraps onto a second line and even a third.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "HOST: Welcome back to the show.\n\nGUEST: Thanks for having me.",
+  "chunks": [
+   "HOST: Welcome back to the show. GUEST: Thanks for having me."
+  ],
+  "segments": [
+   {
+    "Text": "HOST: Welcome back to the show.\n\nGUEST: Thanks for having me.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "HOST",
+    "Text": "Welcome back to the show.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Speaker": "GUEST",
+    "Text": "Thanks for having me.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "HOST: [laughs]\n\nGUEST: That's actually true.",
+  "chunks": [
+   "HOST: [laughs]\n\nGUEST: That's actually true."
+  ],
+  "segments": [
+   {
+    "Text": "HOST:",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "GUEST: That's actually true.",
+    "Instruct": "laughs",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "GUEST",
+    "Text": "That's actually true.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "HOST: [whisper] Keep it down.",
+  "chunks": [
+   "HOST: [whisper] Keep it down."
+  ],
+  "segments": [
+   {
+    "Text": "HOST:",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Keep it down.",
+    "Instruct": "whisper",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "HOST",
+    "Text": "[whisper] Keep it down.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "Have you talked to five customers this week?Because that number predicts more than your roadmap does.",
+  "chunks": [
+   "Have you talked to five customers this week?",
+   "Because that number predicts more than your roadmap does."
+  ],
+  "segments": [
+   {
+    "Text": "Have you talked to five customers this week?Because that number predicts more than your roadmap does.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "He finally said 'that's the deal'.Nobody in the room said anything back to him after that moment.",
+  "chunks": [
+   "He finally said 'that's the deal'. Nobody in the room said anything back to him after that moment."
+  ],
+  "segments": [
+   {
+    "Text": "He finally said 'that's the deal'.Nobody in the room said anything back to him after that moment.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Hello",
+  "chunks": [
+   "Hello"
+  ],
+  "segments": [
+   {
+    "Text": "Hello",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Hello [a][b] world",
+  "chunks": [
+   "Hello [a][b] world"
+  ],
+  "segments": [
+   {
+    "Text": "Hello",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "world",
+    "Instruct": "b",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Hello there, how are you doing today?",
+  "chunks": [
+   "Hello there, how are you doing today?"
+  ],
+  "segments": [
+   {
+    "Text": "Hello there, how are you doing today?",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Hello there. [excited] This part is loud! [calm] This part is quiet.",
+  "chunks": [
+   "Hello there. [excited] This part is loud! [calm] This part is quiet."
+  ],
+  "segments": [
+   {
+    "Text": "Hello there.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "This part is loud!",
+    "Instruct": "excited",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "This part is quiet.",
+    "Instruct": "calm",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Hello 世界 test",
+  "chunks": [
+   "Hello 世界 test"
+  ],
+  "segments": [
+   {
+    "Text": "Hello 世界 test",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Hello.",
+  "chunks": [
+   "Hello."
+  ],
+  "segments": [
+   {
+    "Text": "Hello.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Hmm.....So then what happened next in the story after that point in time.",
+  "chunks": [
+   "Hmm..... So then what happened next in the story after that point in time."
+  ],
+  "segments": [
+   {
+    "Text": "Hmm.....So then what happened next in the story after that point in time.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Host: Welcome back to the show.\n\nGuest: [pause:-300ms] Thanks, great to be here! [excited]\n\nHost: Let's dive in.\nIt's a big topic.",
+  "chunks": [
+   "Host: Welcome back to the show. Guest: [pause:-300ms] Thanks, great to be here!",
+   "[excited]\n\nHost: Let's dive in. It's a big topic."
+  ],
+  "segments": [
+   {
+    "Text": "Host: Welcome back to the show.\n\nGuest:",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Thanks, great to be here!",
+    "Instruct": "",
+    "GapBeforeMs": -300
+   },
+   {
+    "Text": "Host: Let's dive in.\nIt's a big topic.",
+    "Instruct": "excited",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "Host",
+    "Text": "Welcome back to the show.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Speaker": "Guest",
+    "Text": "Thanks, great to be here!",
+    "Instruct": "excited",
+    "GapBeforeMs": -300
+   },
+   {
+    "Speaker": "Host",
+    "Text": "Let's dive in. It's a big topic.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "I can't believe you actually did that.",
+  "chunks": [
+   "I can't believe you actually did that."
+  ],
+  "segments": [
+   {
+    "Text": "I can't believe you actually did that.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "I have huge news today, you won't believe it! Seriously, huge.",
+  "chunks": [
+   "I have huge news today, you won't believe it!",
+   "Seriously, huge."
+  ],
+  "segments": [
+   {
+    "Text": "I have huge news today, you won't believe it! Seriously, huge.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "I waited by the door for a while...Eventually I gave up and went back inside to finish the report.",
+  "chunks": [
+   "I waited by the door for a while...",
+   "Eventually I gave up and went back inside to finish the report."
+  ],
+  "segments": [
+   {
+    "Text": "I waited by the door for a while...Eventually I gave up and went back inside to finish the report.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "ICP in your head? Can't be scored.",
+  "chunks": [
+   "ICP in your head? Can't be scored."
+  ],
+  "segments": [
+   {
+    "Text": "ICP in your head? Can't be scored.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Il pleut beaucoup aujourd'hui dans toute la region.Élise part quand même demain matin sous la pluie battante.",
+  "chunks": [
+   "Il pleut beaucoup aujourd'hui dans toute la region.",
+   "Élise part quand même demain matin sous la pluie battante."
+  ],
+  "segments": [
+   {
+    "Text": "Il pleut beaucoup aujourd'hui dans toute la region.Élise part quand même demain matin sous la pluie battante.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Instruct = %q, want shocked",
+  "chunks": [
+   "Instruct = %q, want shocked"
+  ],
+  "segments": [
+   {
+    "Text": "Instruct = %q, want shocked",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "It's Chelsea vs.Arsenal this weekend at the stadium.",
+  "chunks": [
+   "It's Chelsea vs.Arsenal this weekend at the stadium."
+  ],
+  "segments": [
+   {
+    "Text": "It's Chelsea vs.Arsenal this weekend at the stadium.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Just plain text, nothing tagged.",
+  "chunks": [
+   "Just plain text, nothing tagged."
+  ],
+  "segments": [
+   {
+    "Text": "Just plain text, nothing tagged.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Keep it down.",
+  "chunks": [
+   "Keep it down."
+  ],
+  "segments": [
+   {
+    "Text": "Keep it down.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Mr.",
+  "chunks": [
+   "Mr."
+  ],
+  "segments": [
+   {
+    "Text": "Mr.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Mr.Mr.Mr.",
+  "chunks": [
+   "Mr.Mr.Mr."
+  ],
+  "segments": [
+   {
+    "Text": "Mr.Mr.Mr.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Mr.Smith",
+  "chunks": [
+   "Mr.Smith"
+  ],
+  "segments": [
+   {
+    "Text": "Mr.Smith",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Mrs",
+  "chunks": [
+   "Mrs"
+  ],
+  "segments": [
+   {
+    "Text": "Mrs",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Mrs.Adams",
+  "chunks": [
+   "Mrs.Adams"
+  ],
+  "segments": [
+   {
+    "Text": "Mrs.Adams",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Narrator: [silence:1.5s] Once upon a time.\n\nnot a speaker line\n\nDr. Ada: skipped\n\nBob:\n\nAlice: [calm]",
+  "chunks": [
+   "Narrator: [silence:1.5s] Once upon a time. not a speaker line\n\nDr.",
+   "Ada: skipped\n\nBob:\n\nAlice: [calm]"
+  ],
+  "segments": [
+   {
+    "Text": "Narrator:",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Once upon a time.\n\nnot a speaker line\n\nDr. Ada: skipped\n\nBob:\n\nAlice:",
+    "Instruct": "",
+    "GapBeforeMs": 1500
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "Narrator",
+    "Text": "Once upon a time.",
+    "Instruct": "",
+    "GapBeforeMs": 1500
+   }
+  ]
+ },
+ {
+  "input": "Nothing.However",
+  "chunks": [
+   "Nothing. However"
+  ],
+  "segments": [
+   {
+    "Text": "Nothing.However",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "One offer per segment.\n",
+  "chunks": [
+   "One offer per segment."
+  ],
+  "segments": [
+   {
+    "Text": "One offer per segment.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "One offer per segment. Pick one segment. They failed. Can't be scored.",
+  "chunks": [
+   "One offer per segment. Pick one segment. They failed.",
+   "Can't be scored."
+  ],
+  "segments": [
+   {
+    "Text": "One offer per segment. Pick one segment. They failed. Can't be scored.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "One two three. Four five six seven eight nine ten eleven. Twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty-one twenty-two twenty-three twenty-four twenty-five twenty-six twenty-seven twenty-eight twenty-nine thirty thirty-one.",
+  "chunks": [
+   "One two three. Four five six seven eight nine ten eleven.",
+   "Twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty-one twenty-two twenty-three twenty-four twenty-five twenty-six twenty-seven twenty-eight twenty-nine thirty thirty-one."
+  ],
+  "segments": [
+   {
+    "Text": "One two three. Four five six seven eight nine ten eleven. Twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty-one twenty-two twenty-three twenty-four twenty-five twenty-six twenty-seven twenty-eight twenty-nine thirty thirty-one.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Outbound doesn't fix a weak offer. It exposes it.\n",
+  "chunks": [
+   "Outbound doesn't fix a weak offer. It exposes it."
+  ],
+  "segments": [
+   {
+    "Text": "Outbound doesn't fix a weak offer. It exposes it.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Prof",
+  "chunks": [
+   "Prof"
+  ],
+  "segments": [
+   {
+    "Text": "Prof",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Prof.Lee",
+  "chunks": [
+   "Prof.Lee"
+  ],
+  "segments": [
+   {
+    "Text": "Prof.Lee",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Prof.Lee published a new paper on the subject this year.",
+  "chunks": [
+   "Prof.Lee published a new paper on the subject this year."
+  ],
+  "segments": [
+   {
+    "Text": "Prof.Lee published a new paper on the subject this year.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Really?!?!?!That seems excessive for a simple question honestly speaking to be fair.",
+  "chunks": [
+   "Really?!?!?! That seems excessive for a simple question honestly speaking to be fair."
+  ],
+  "segments": [
+   {
+    "Text": "Really?!?!?!That seems excessive for a simple question honestly speaking to be fair.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "SILENCE:1.5s",
+  "chunks": [
+   "SILENCE:1.5s"
+  ],
+  "segments": [
+   {
+    "Text": "SILENCE:1.5s",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "SILENCE",
+    "Text": "1.5s",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "Second part.",
+  "chunks": [
+   "Second part."
+  ],
+  "segments": [
+   {
+    "Text": "Second part.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "See the appendix, e.g.next section covers it in more depth than the summary.",
+  "chunks": [
+   "See the appendix, e.g.next section covers it in more depth than the summary."
+  ],
+  "segments": [
+   {
+    "Text": "See the appendix, e.g.next section covers it in more depth than the summary.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "She said \"we ship every week.\"Nobody on the team remembers the last time that wasn't true.",
+  "chunks": [
+   "She said \"we ship every week.\" Nobody on the team remembers the last time that wasn't true."
+  ],
+  "segments": [
+   {
+    "Text": "She said \"we ship every week.\"Nobody on the team remembers the last time that wasn't true.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "St (saint/street)",
+  "chunks": [
+   "St (saint/street)"
+  ],
+  "segments": [
+   {
+    "Text": "St (saint/street)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "St.Patrick",
+  "chunks": [
+   "St.Patrick"
+  ],
+  "segments": [
+   {
+    "Text": "St.Patrick",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Steps: 1.Gather ingredients 2.Mix batter 3.Bake for forty minutes.",
+  "chunks": [
+   "Steps: 1. Gather ingredients 2. Mix batter 3.",
+   "Bake for forty minutes."
+  ],
+  "segments": [
+   {
+    "Text": "Steps: 1.Gather ingredients 2.Mix batter 3.Bake for forty minutes.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "Steps",
+    "Text": "1.Gather ingredients 2.Mix batter 3.Bake for forty minutes.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "SynthesizeBatch invoked llama-tts %d times, want exactly 1 (one batch call for the single cache miss)",
+  "chunks": [
+   "SynthesizeBatch invoked llama-tts %d times, want exactly 1 (one batch call for the single cache miss)"
+  ],
+  "segments": [
+   {
+    "Text": "SynthesizeBatch invoked llama-tts %d times, want exactly 1 (one batch call for the single cache miss)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "SynthesizeBatch: %v",
+  "chunks": [
+   "SynthesizeBatch: %v"
+  ],
+  "segments": [
+   {
+    "Text": "SynthesizeBatch: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "SynthesizeBatch",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "Tell me how many real-time conversations you've had with customers this week.Tell me how many your competitor has had and I'll tell you the odds they beat you!Not your feature velocity.Not your funding.Not your follower count.Conversations.This week.With people who pay you or might.It's the only leading indicator I've ever found that never lies.",
+  "chunks": [
+   "Tell me how many real-time conversations you've had with customers this week.",
+   "Tell me how many your competitor has had and I'll tell you the odds they beat you!",
+   "Not your feature velocity. Not your funding. Not your follower count.",
+   "Conversations. This week. With people who pay you or might.",
+   "It's the only leading indicator I've ever found that never lies."
+  ],
+  "segments": [
+   {
+    "Text": "Tell me how many real-time conversations you've had with customers this week.Tell me how many your competitor has had and I'll tell you the odds they beat you!Not your feature velocity.Not your funding.Not your follower count.Conversations.This week.With people who pay you or might.It's the only leading indicator I've ever found that never lies.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Tell me how many real-time conversations you've had with customers this week.Tell me how many your competitor has had and I'll tell you the odds they beat you.Not your feature velocity. Not your funding. Not your follower count.Conversations. This week. With people who pay you or might.It's the only leading indicator I've ever found that never lies.",
+  "chunks": [
+   "Tell me how many real-time conversations you've had with customers this week.",
+   "Tell me how many your competitor has had and I'll tell you the odds they beat you.",
+   "Not your feature velocity. Not your funding. Not your follower count.",
+   "Conversations. This week. With people who pay you or might.",
+   "It's the only leading indicator I've ever found that never lies."
+  ],
+  "segments": [
+   {
+    "Text": "Tell me how many real-time conversations you've had with customers this week.Tell me how many your competitor has had and I'll tell you the odds they beat you.Not your feature velocity. Not your funding. Not your follower count.Conversations. This week. With people who pay you or might.It's the only leading indicator I've ever found that never lies.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Thanks for having me.",
+  "chunks": [
+   "Thanks for having me."
+  ],
+  "segments": [
+   {
+    "Text": "Thanks for having me.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "The best buyers already tried. They failed.\n",
+  "chunks": [
+   "The best buyers already tried. They failed."
+  ],
+  "segments": [
+   {
+    "Text": "The best buyers already tried. They failed.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "The hotel is on St.Patrick Street near downtown.",
+  "chunks": [
+   "The hotel is on St.Patrick Street near downtown."
+  ],
+  "segments": [
+   {
+    "Text": "The hotel is on St.Patrick Street near downtown.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "The measured rate is 3.5 percent, which beats last quarter's number.",
+  "chunks": [
+   "The measured rate is 3.5 percent, which beats last quarter's number."
+  ],
+  "segments": [
+   {
+    "Text": "The measured rate is 3.5 percent, which beats last quarter's number.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "The part costs 3.5 dollars per unit, which is cheap.",
+  "chunks": [
+   "The part costs 3.5 dollars per unit, which is cheap."
+  ],
+  "segments": [
+   {
+    "Text": "The part costs 3.5 dollars per unit, which is cheap.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "The railway authority also said former CIA chief David Petraeus had been on board another train at Yahodyn station at the time of the drone strike.",
+  "chunks": [
+   "The railway authority also said former CIA chief David Petraeus had been on board another train at Yahodyn station at the time of the drone strike."
+  ],
+  "segments": [
+   {
+    "Text": "The railway authority also said former CIA chief David Petraeus had been on board another train at Yahodyn station at the time of the drone strike.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "The report cites the U.S.Department of Commerce as its primary source for this data.",
+  "chunks": [
+   "The report cites the U. S.Department of Commerce as its primary source for this data."
+  ],
+  "segments": [
+   {
+    "Text": "The report cites the U.S.Department of Commerce as its primary source for this data.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "This has no speaker prefix.\n\nHOST: But this does.",
+  "chunks": [
+   "This has no speaker prefix. HOST: But this does."
+  ],
+  "segments": [
+   {
+    "Text": "This has no speaker prefix.\n\nHOST: But this does.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "HOST",
+    "Text": "But this does.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "This is a long thought that wraps onto a second line and even a third.",
+  "chunks": [
+   "This is a long thought that wraps onto a second line and even a third."
+  ],
+  "segments": [
+   {
+    "Text": "This is a long thought that wraps onto a second line and even a third.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "This is a normal sentence. Here is another one, spaced properly. And a third to round it out nicely.",
+  "chunks": [
+   "This is a normal sentence. Here is another one, spaced properly.",
+   "And a third to round it out nicely."
+  ],
+  "segments": [
+   {
+    "Text": "This is a normal sentence. Here is another one, spaced properly. And a third to round it out nicely.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "This is a test sentence with several words in it. ",
+  "chunks": [
+   "This is a test sentence with several words in it."
+  ],
+  "segments": [
+   {
+    "Text": "This is a test sentence with several words in it.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "This is a test sentence with several words.Followed by another one right after it with no space.",
+  "chunks": [
+   "This is a test sentence with several words.",
+   "Followed by another one right after it with no space."
+  ],
+  "segments": [
+   {
+    "Text": "This is a test sentence with several words.Followed by another one right after it with no space.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "This part is fine and normal.Nothing.However this final part right at the end.Is glued too",
+  "chunks": [
+   "This part is fine and normal. Nothing. However this final part right at the end.",
+   "Is glued too"
+  ],
+  "segments": [
+   {
+    "Text": "This part is fine and normal.Nothing.However this final part right at the end.Is glued too",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Wait, really?",
+  "chunks": [
+   "Wait, really?"
+  ],
+  "segments": [
+   {
+    "Text": "Wait, really?",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Wait... what?! No way!!! Really?? Yes.",
+  "chunks": [
+   "Wait... what?! No way!!! Really?? Yes."
+  ],
+  "segments": [
+   {
+    "Text": "Wait... what?! No way!!! Really?? Yes.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Wait??!!Really???!!!Yes indeed it is quite true and confirmed for certain this time around completely.",
+  "chunks": [
+   "Wait??!! Really???!!! Yes indeed it is quite true and confirmed for certain this time around completely."
+  ],
+  "segments": [
+   {
+    "Text": "Wait??!!Really???!!!Yes indeed it is quite true and confirmed for certain this time around completely.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Watch out for that ledge!Seriously, it drops off right there with nothing to catch you.",
+  "chunks": [
+   "Watch out for that ledge! Seriously, it drops off right there with nothing to catch you."
+  ],
+  "segments": [
+   {
+    "Text": "Watch out for that ledge!Seriously, it drops off right there with nothing to catch you.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "We met Mrs.Adams at the fundraiser last night downtown.",
+  "chunks": [
+   "We met Mrs.Adams at the fundraiser last night downtown."
+  ],
+  "segments": [
+   {
+    "Text": "We met Mrs.Adams at the fundraiser last night downtown.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "We packed snacks, water, maps, etc.Then we left for the trip.",
+  "chunks": [
+   "We packed snacks, water, maps, etc.Then we left for the trip."
+  ],
+  "segments": [
+   {
+    "Text": "We packed snacks, water, maps, etc.Then we left for the trip.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "We shipped version 2.1 today and it fixed the crash from last week.",
+  "chunks": [
+   "We shipped version 2.1 today and it fixed the crash from last week."
+  ],
+  "segments": [
+   {
+    "Text": "We shipped version 2.1 today and it fixed the crash from last week.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "We spoke with Mr.Smith yesterday about the contract renewal terms.",
+  "chunks": [
+   "We spoke with Mr.Smith yesterday about the contract renewal terms."
+  ],
+  "segments": [
+   {
+    "Text": "We spoke with Mr.Smith yesterday about the contract renewal terms.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Welcome back everyone. It's good to be here.",
+  "chunks": [
+   "Welcome back everyone. It's good to be here."
+  ],
+  "segments": [
+   {
+    "Text": "Welcome back everyone. It's good to be here.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Welcome back everyone. It's good to be here. [excited] I have huge news today, you won't believe it! Seriously, huge. [calm] Anyway, let's get into it.",
+  "chunks": [
+   "Welcome back everyone. It's good to be here.",
+   "[excited] I have huge news today, you won't believe it!",
+   "Seriously, huge. [calm] Anyway, let's get into it."
+  ],
+  "segments": [
+   {
+    "Text": "Welcome back everyone. It's good to be here.",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "I have huge news today, you won't believe it! Seriously, huge.",
+    "Instruct": "excited",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Anyway, let's get into it.",
+    "Instruct": "calm",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Welcome back to the show.",
+  "chunks": [
+   "Welcome back to the show."
+  ],
+  "segments": [
+   {
+    "Text": "Welcome back to the show.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Yeah, totally!",
+  "chunks": [
+   "Yeah, totally!"
+  ],
+  "segments": [
+   {
+    "Text": "Yeah, totally!",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "[excited] Hi there. [pause:500ms] Bye now. [whisper] psst",
+  "chunks": [
+   "[excited] Hi there. [pause:500ms] Bye now. [whisper] psst"
+  ],
+  "segments": [
+   {
+    "Text": "Hi there.",
+    "Instruct": "excited",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "Bye now.",
+    "Instruct": "excited",
+    "GapBeforeMs": 500
+   },
+   {
+    "Text": "psst",
+    "Instruct": "whisper",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "[laughs]",
+  "chunks": [
+   "[laughs]"
+  ],
+  "segments": null,
+  "turns": null
+ },
+ {
+  "input": "[pause:2s]",
+  "chunks": [
+   "[pause:2s]"
+  ],
+  "segments": null,
+  "turns": null
+ },
+ {
+  "input": "[pause:500ms] Hello there.",
+  "chunks": [
+   "[pause:500ms] Hello there."
+  ],
+  "segments": [
+   {
+    "Text": "Hello there.",
+    "Instruct": "",
+    "GapBeforeMs": 500
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "[pause:999s] Too long.",
+  "chunks": [
+   "[pause:999s] Too long."
+  ],
+  "segments": [
+   {
+    "Text": "Too long.",
+    "Instruct": "",
+    "GapBeforeMs": 30000
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "[whisper] Keep it down.",
+  "chunks": [
+   "[whisper] Keep it down."
+  ],
+  "segments": [
+   {
+    "Text": "Keep it down.",
+    "Instruct": "whisper",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "a.wav",
+  "chunks": [
+   "a.wav"
+  ],
+  "segments": [
+   {
+    "Text": "a.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "a.wav (oldest) should have been evicted",
+  "chunks": [
+   "a.wav (oldest) should have been evicted"
+  ],
+  "segments": [
+   {
+    "Text": "a.wav (oldest) should have been evicted",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "a.wav was evicted despite being under the cap",
+  "chunks": [
+   "a.wav was evicted despite being under the cap"
+  ],
+  "segments": [
+   {
+    "Text": "a.wav was evicted despite being under the cap",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "abbreviation got mangled: %v",
+  "chunks": [
+   "abbreviation got mangled: %v"
+  ],
+  "segments": [
+   {
+    "Text": "abbreviation got mangled: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "abbreviation got mangled",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "accented capital after period",
+  "chunks": [
+   "accented capital after period"
+  ],
+  "segments": [
+   {
+    "Text": "accented capital after period",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "after.\nThird",
+  "chunks": [
+   "after. Third"
+  ],
+  "segments": [
+   {
+    "Text": "after.\nThird",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "after.Third",
+  "chunks": [
+   "after. Third"
+  ],
+  "segments": [
+   {
+    "Text": "after.Third",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "again",
+  "chunks": [
+   "again"
+  ],
+  "segments": [
+   {
+    "Text": "again",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, ",
+  "chunks": [
+   "alpha beta gamma delta, alpha beta gamma delta,",
+   "alpha beta gamma delta, alpha beta gamma delta,",
+   "alpha beta gamma delta, alpha beta gamma delta,",
+   "alpha beta gamma delta, alpha beta gamma delta,",
+   "alpha beta gamma delta, alpha beta gamma delta,",
+   "alpha beta gamma delta, alpha beta gamma delta,"
+  ],
+  "segments": [
+   {
+    "Text": "alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta, alpha beta gamma delta,",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "audio",
+  "chunks": [
+   "audio"
+  ],
+  "segments": [
+   {
+    "Text": "audio",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "cache",
+  "chunks": [
+   "cache"
+  ],
+  "segments": [
+   {
+    "Text": "cache",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "cache-hit job output = %q, want cached content %q",
+  "chunks": [
+   "cache-hit job output = %q, want cached content %q"
+  ],
+  "segments": [
+   {
+    "Text": "cache-hit job output = %q, want cached content %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "cache-miss job output = %q, want %q",
+  "chunks": [
+   "cache-miss job output = %q, want %q"
+  ],
+  "segments": [
+   {
+    "Text": "cache-miss job output = %q, want %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "cached output differs from original: %q vs %q",
+  "chunks": [
+   "cached output differs from original: %q vs %q"
+  ],
+  "segments": [
+   {
+    "Text": "cached output differs from original: %q vs %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "calm",
+  "chunks": [
+   "calm"
+  ],
+  "segments": [
+   {
+    "Text": "calm",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "changed speaker file content produced the same key",
+  "chunks": [
+   "changed speaker file content produced the same key"
+  ],
+  "segments": [
+   {
+    "Text": "changed speaker file content produced the same key",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "changing the model file produced the same cache key",
+  "chunks": [
+   "changing the model file produced the same cache key"
+  ],
+  "segments": [
+   {
+    "Text": "changing the model file produced the same cache key",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "chunk %d does not end on punctuation: %q",
+  "chunks": [
+   "chunk %d does not end on punctuation: %q"
+  ],
+  "segments": [
+   {
+    "Text": "chunk %d does not end on punctuation: %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "chunk %d exceeds max words (%d hanzi-equivalent): %q",
+  "chunks": [
+   "chunk %d exceeds max words (%d hanzi-equivalent): %q"
+  ],
+  "segments": [
+   {
+    "Text": "chunk %d exceeds max words (%d hanzi-equivalent): %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "chunk %d exceeds max words: %q",
+  "chunks": [
+   "chunk %d exceeds max words: %q"
+  ],
+  "segments": [
+   {
+    "Text": "chunk %d exceeds max words: %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "chunk %d is a bare single-letter fragment: %q (chunks: %v)",
+  "chunks": [
+   "chunk %d is a bare single-letter fragment: %q (chunks: %v)"
+  ],
+  "segments": [
+   {
+    "Text": "chunk %d is a bare single-letter fragment: %q (chunks: %v)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "chunk %d is a lone abbreviation with nothing else in it: %q (chunks: %v)",
+  "chunks": [
+   "chunk %d is a lone abbreviation with nothing else in it: %q (chunks: %v)"
+  ],
+  "segments": [
+   {
+    "Text": "chunk %d is a lone abbreviation with nothing else in it: %q (chunks: %v)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "chunk = %q, want unchanged %q",
+  "chunks": [
+   "chunk = %q, want unchanged %q"
+  ],
+  "segments": [
+   {
+    "Text": "chunk = %q, want unchanged %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "chunk exceeds max words (%d): %q",
+  "chunks": [
+   "chunk exceeds max words (%d): %q"
+  ],
+  "segments": [
+   {
+    "Text": "chunk exceeds max words (%d): %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "chunk exceeds max words: %d",
+  "chunks": [
+   "chunk exceeds max words: %d"
+  ],
+  "segments": [
+   {
+    "Text": "chunk exceeds max words: %d",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "chunk exceeds max words",
+    "Text": "%d",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "clause got split mid-way instead of kept whole (no chunk contains it intact): %v",
+  "chunks": [
+   "clause got split mid-way instead of kept whole (no chunk contains it intact): %v"
+  ],
+  "segments": [
+   {
+    "Text": "clause got split mid-way instead of kept whole (no chunk contains it intact): %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "context",
+  "chunks": [
+   "context"
+  ],
+  "segments": [
+   {
+    "Text": "context",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "count.Conversations",
+  "chunks": [
+   "count. Conversations"
+  ],
+  "segments": [
+   {
+    "Text": "count.Conversations",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "currency fragment mangled: %v",
+  "chunks": [
+   "currency fragment mangled: %v"
+  ],
+  "segments": [
+   {
+    "Text": "currency fragment mangled: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "currency fragment mangled",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "cyrillic capital after period",
+  "chunks": [
+   "cyrillic capital after period"
+  ],
+  "segments": [
+   {
+    "Text": "cyrillic capital after period",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "deal'.Nobody",
+  "chunks": [
+   "deal'. Nobody"
+  ],
+  "segments": [
+   {
+    "Text": "deal'.Nobody",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "decimal got mangled: %v",
+  "chunks": [
+   "decimal got mangled: %v"
+  ],
+  "segments": [
+   {
+    "Text": "decimal got mangled: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "decimal got mangled",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "decimal mid-sentence",
+  "chunks": [
+   "decimal mid-sentence"
+  ],
+  "segments": [
+   {
+    "Text": "decimal mid-sentence",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "decimal number",
+  "chunks": [
+   "decimal number"
+  ],
+  "segments": [
+   {
+    "Text": "decimal number",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "different audio bytes",
+  "chunks": [
+   "different audio bytes"
+  ],
+  "segments": [
+   {
+    "Text": "different audio bytes",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "different instruct (including empty) should each produce a distinct key",
+  "chunks": [
+   "different instruct (including empty) should each produce a distinct key"
+  ],
+  "segments": [
+   {
+    "Text": "different instruct (including empty) should each produce a distinct key",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "different model bytes",
+  "chunks": [
+   "different model bytes"
+  ],
+  "segments": [
+   {
+    "Text": "different model bytes",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "different text produced the same cache key",
+  "chunks": [
+   "different text produced the same cache key"
+  ],
+  "segments": [
+   {
+    "Text": "different text produced the same cache key",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "done\n",
+  "chunks": [
+   "done"
+  ],
+  "segments": [
+   {
+    "Text": "done",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "double punctuation glued to capital",
+  "chunks": [
+   "double punctuation glued to capital"
+  ],
+  "segments": [
+   {
+    "Text": "double punctuation glued to capital",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "e.g.next",
+  "chunks": [
+   "e.g.next"
+  ],
+  "segments": [
+   {
+    "Text": "e.g.next",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "echo invoked \u003e\u003e \"",
+  "chunks": [
+   "echo invoked \u003e\u003e \""
+  ],
+  "segments": [
+   {
+    "Text": "echo invoked \u003e\u003e \"",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "effectiveSeed(%d) = %d, want unchanged",
+  "chunks": [
+   "effectiveSeed(%d) = %d, want unchanged"
+  ],
+  "segments": [
+   {
+    "Text": "effectiveSeed(%d) = %d, want unchanged",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "effectiveSeed(0) = %d, want DefaultSeed (%d)",
+  "chunks": [
+   "effectiveSeed(0) = %d, want DefaultSeed (%d)"
+  ],
+  "segments": [
+   {
+    "Text": "effectiveSeed(0) = %d, want DefaultSeed (%d)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "ellipsis glued to capital",
+  "chunks": [
+   "ellipsis glued to capital"
+  ],
+  "segments": [
+   {
+    "Text": "ellipsis glued to capital",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "else\n",
+  "chunks": [
+   "else"
+  ],
+  "segments": [
+   {
+    "Text": "else",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "end.Is",
+  "chunks": [
+   "end. Is"
+  ],
+  "segments": [
+   {
+    "Text": "end.Is",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "etc",
+  "chunks": [
+   "etc"
+  ],
+  "segments": [
+   {
+    "Text": "etc",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "etc.Then",
+  "chunks": [
+   "etc.Then"
+  ],
+  "segments": [
+   {
+    "Text": "etc.Then",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "excited",
+  "chunks": [
+   "excited"
+  ],
+  "segments": [
+   {
+    "Text": "excited",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "exclamation glued to capital",
+  "chunks": [
+   "exclamation glued to capital"
+  ],
+  "segments": [
+   {
+    "Text": "exclamation glued to capital",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected \"Dr.Jones\" to stay attached, got: %v",
+  "chunks": [
+   "expected \"Dr.Jones\" to stay attached, got: %v"
+  ],
+  "segments": [
+   {
+    "Text": "expected \"Dr.Jones\" to stay attached, got: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected %q to stay attached, got: %v",
+  "chunks": [
+   "expected %q to stay attached, got: %v"
+  ],
+  "segments": [
+   {
+    "Text": "expected %q to stay attached, got: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected %q to survive untouched, got: %v",
+  "chunks": [
+   "expected %q to survive untouched, got: %v"
+  ],
+  "segments": [
+   {
+    "Text": "expected %q to survive untouched, got: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected Chinese run-on to be split at the glued sentence boundary, got: %v",
+  "chunks": [
+   "expected Chinese run-on to be split at the glued sentence boundary, got: %v"
+  ],
+  "segments": [
+   {
+    "Text": "expected Chinese run-on to be split at the glued sentence boundary, got: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected an error for instruct text over the length cap, got nil",
+  "chunks": [
+   "expected an error for instruct text over the length cap, got nil"
+  ],
+  "segments": [
+   {
+    "Text": "expected an error for instruct text over the length cap, got nil",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected cache hit after cachePut",
+  "chunks": [
+   "expected cache hit after cachePut"
+  ],
+  "segments": [
+   {
+    "Text": "expected cache hit after cachePut",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected caching to be a no-op with CacheDir empty",
+  "chunks": [
+   "expected caching to be a no-op with CacheDir empty"
+  ],
+  "segments": [
+   {
+    "Text": "expected caching to be a no-op with CacheDir empty",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected key.wav to exist: %v",
+  "chunks": [
+   "expected key.wav to exist: %v"
+  ],
+  "segments": [
+   {
+    "Text": "expected key.wav to exist: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected miss for a key never written",
+  "chunks": [
+   "expected miss for a key never written"
+  ],
+  "segments": [
+   {
+    "Text": "expected miss for a key never written",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected multiple chunks for long text, got %d",
+  "chunks": [
+   "expected multiple chunks for long text, got %d"
+  ],
+  "segments": [
+   {
+    "Text": "expected multiple chunks for long text, got %d",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected the long Chinese paragraph to split into multiple chunks, got %d: %v",
+  "chunks": [
+   "expected the long Chinese paragraph to split into multiple chunks, got %d: %v"
+  ],
+  "segments": [
+   {
+    "Text": "expected the long Chinese paragraph to split into multiple chunks, got %d: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected the long run-on to be split, got %d chunk(s)",
+  "chunks": [
+   "expected the long run-on to be split, got %d chunk(s)"
+  ],
+  "segments": [
+   {
+    "Text": "expected the long run-on to be split, got %d chunk(s)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected the long sentence to be split, got %d chunk(s)",
+  "chunks": [
+   "expected the long sentence to be split, got %d chunk(s)"
+  ],
+  "segments": [
+   {
+    "Text": "expected the long sentence to be split, got %d chunk(s)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "expected the unspaced run-on to be split into multiple chunks, got %d: %v",
+  "chunks": [
+   "expected the unspaced run-on to be split into multiple chunks, got %d: %v"
+  ],
+  "segments": [
+   {
+    "Text": "expected the unspaced run-on to be split into multiple chunks, got %d: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "fake llama-tts invoked %d times, want 1 (second call should have hit the cache)",
+  "chunks": [
+   "fake llama-tts invoked %d times, want 1 (second call should have hit the cache)"
+  ],
+  "segments": [
+   {
+    "Text": "fake llama-tts invoked %d times, want 1 (second call should have hit the cache)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "fake wav bytes",
+  "chunks": [
+   "fake wav bytes"
+  ],
+  "segments": [
+   {
+    "Text": "fake wav bytes",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "fi\n",
+  "chunks": [
+   "fi"
+  ],
+  "segments": [
+   {
+    "Text": "fi",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "fine and normal.Nothing",
+  "chunks": [
+   "fine and normal. Nothing"
+  ],
+  "segments": [
+   {
+    "Text": "fine and normal.Nothing",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "first call: %v",
+  "chunks": [
+   "first call: %v"
+  ],
+  "segments": [
+   {
+    "Text": "first call: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "first call",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "fix introduced a double space into normally-punctuated text: %v",
+  "chunks": [
+   "fix introduced a double space into normally-punctuated text: %v"
+  ],
+  "segments": [
+   {
+    "Text": "fix introduced a double space into normally-punctuated text: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "funding.Not",
+  "chunks": [
+   "funding. Not"
+  ],
+  "segments": [
+   {
+    "Text": "funding.Not",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "generated.wav",
+  "chunks": [
+   "generated.wav"
+  ],
+  "segments": [
+   {
+    "Text": "generated.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "glued pair %q still present after chunking: %v",
+  "chunks": [
+   "glued pair %q still present after chunking: %v"
+  ],
+  "segments": [
+   {
+    "Text": "glued pair %q still present after chunking: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "glued pair %q still present: %v",
+  "chunks": [
+   "glued pair %q still present: %v"
+  ],
+  "segments": [
+   {
+    "Text": "glued pair %q still present: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "glued sentence after closing quote",
+  "chunks": [
+   "glued sentence after closing quote"
+  ],
+  "segments": [
+   {
+    "Text": "glued sentence after closing quote",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "goodbye",
+  "chunks": [
+   "goodbye"
+  ],
+  "segments": [
+   {
+    "Text": "goodbye",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %+v",
+  "chunks": [
+   "got %+v"
+  ],
+  "segments": [
+   {
+    "Text": "got %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %+v, want empty instruct and 500ms gap",
+  "chunks": [
+   "got %+v, want empty instruct and 500ms gap"
+  ],
+  "segments": [
+   {
+    "Text": "got %+v, want empty instruct and 500ms gap",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %+v, want gap clamped to %d",
+  "chunks": [
+   "got %+v, want gap clamped to %d"
+  ],
+  "segments": [
+   {
+    "Text": "got %+v, want gap clamped to %d",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %+v, want one untagged segment",
+  "chunks": [
+   "got %+v, want one untagged segment"
+  ],
+  "segments": [
+   {
+    "Text": "got %+v, want one untagged segment",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %+v, want only the GUEST turn",
+  "chunks": [
+   "got %+v, want only the GUEST turn"
+  ],
+  "segments": [
+   {
+    "Text": "got %+v, want only the GUEST turn",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %+v, want speaker \"Guest 2\"",
+  "chunks": [
+   "got %+v, want speaker \"Guest 2\""
+  ],
+  "segments": [
+   {
+    "Text": "got %+v, want speaker \"Guest 2\"",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d chunks under minChunkWords (%d), want at most 1 (the trailing remainder): %v",
+  "chunks": [
+   "got %d chunks under minChunkWords (%d), want at most 1 (the trailing remainder): %v"
+  ],
+  "segments": [
+   {
+    "Text": "got %d chunks under minChunkWords (%d), want at most 1 (the trailing remainder): %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d chunks, want 1 (sentence has no punctuation to split on and is under hardMaxChunkWords): %v",
+  "chunks": [
+   "got %d chunks, want 1 (sentence has no punctuation to split on and is under hardMaxChunkWords): %v"
+  ],
+  "segments": [
+   {
+    "Text": "got %d chunks, want 1 (sentence has no punctuation to split on and is under hardMaxChunkWords): %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d chunks, want 1: %v",
+  "chunks": [
+   "got %d chunks, want 1: %v"
+  ],
+  "segments": [
+   {
+    "Text": "got %d chunks, want 1: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d segments, want %d: %+v",
+  "chunks": [
+   "got %d segments, want %d: %+v"
+  ],
+  "segments": [
+   {
+    "Text": "got %d segments, want %d: %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d segments, want 2: %+v",
+  "chunks": [
+   "got %d segments, want 2: %+v"
+  ],
+  "segments": [
+   {
+    "Text": "got %d segments, want 2: %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d turns, want 1 (non-conforming paragraph skipped): %+v",
+  "chunks": [
+   "got %d turns, want 1 (non-conforming paragraph skipped): %+v"
+  ],
+  "segments": [
+   {
+    "Text": "got %d turns, want 1 (non-conforming paragraph skipped): %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d turns, want 1: %+v",
+  "chunks": [
+   "got %d turns, want 1: %+v"
+  ],
+  "segments": [
+   {
+    "Text": "got %d turns, want 1: %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d turns, want 2: %+v",
+  "chunks": [
+   "got %d turns, want 2: %+v"
+  ],
+  "segments": [
+   {
+    "Text": "got %d turns, want 2: %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %d turns, want 3",
+  "chunks": [
+   "got %d turns, want 3"
+  ],
+  "segments": [
+   {
+    "Text": "got %d turns, want 3",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %v, want nil",
+  "chunks": [
+   "got %v, want nil"
+  ],
+  "segments": [
+   {
+    "Text": "got %v, want nil",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %v, want nil (tag with nothing to speak)",
+  "chunks": [
+   "got %v, want nil (tag with nothing to speak)"
+  ],
+  "segments": [
+   {
+    "Text": "got %v, want nil (tag with nothing to speak)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got %v, want nil for empty input",
+  "chunks": [
+   "got %v, want nil for empty input"
+  ],
+  "segments": [
+   {
+    "Text": "got %v, want nil for empty input",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "got no chunks for non-empty input",
+  "chunks": [
+   "got no chunks for non-empty input"
+  ],
+  "segments": [
+   {
+    "Text": "got no chunks for non-empty input",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "header %q lost or mangled: %v",
+  "chunks": [
+   "header %q lost or mangled: %v"
+  ],
+  "segments": [
+   {
+    "Text": "header %q lost or mangled: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "hello",
+  "chunks": [
+   "hello"
+  ],
+  "segments": [
+   {
+    "Text": "hello",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "hello world",
+  "chunks": [
+   "hello world"
+  ],
+  "segments": [
+   {
+    "Text": "hello world",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "here.Second",
+  "chunks": [
+   "here. Second"
+  ],
+  "segments": [
+   {
+    "Text": "here.Second",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "identical speaker file content produced different keys: %q vs %q",
+  "chunks": [
+   "identical speaker file content produced different keys: %q vs %q"
+  ],
+  "segments": [
+   {
+    "Text": "identical speaker file content produced different keys: %q vs %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "if [ -n \"$scriptfile\" ]; then\n",
+  "chunks": [
+   "if [ -n \"$scriptfile\" ]; then"
+  ],
+  "segments": [
+   {
+    "Text": "if",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "; then",
+    "Instruct": " -n \"$scriptfile\" ",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "input %q produced an empty chunk at index %d: %v",
+  "chunks": [
+   "input %q produced an empty chunk at index %d: %v"
+  ],
+  "segments": [
+   {
+    "Text": "input %q produced an empty chunk at index %d: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "instruct = %q, want %q",
+  "chunks": [
+   "instruct = %q, want %q"
+  ],
+  "segments": [
+   {
+    "Text": "instruct = %q, want %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "instruct at exactly the cap was rejected as too long: %v",
+  "chunks": [
+   "instruct at exactly the cap was rejected as too long: %v"
+  ],
+  "segments": [
+   {
+    "Text": "instruct at exactly the cap was rejected as too long: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "invocations.log",
+  "chunks": [
+   "invocations.log"
+  ],
+  "segments": [
+   {
+    "Text": "invocations.log",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "job %d output = %q, want %q",
+  "chunks": [
+   "job %d output = %q, want %q"
+  ],
+  "segments": [
+   {
+    "Text": "job %d output = %q, want %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "job %d: %v",
+  "chunks": [
+   "job %d: %v"
+  ],
+  "segments": [
+   {
+    "Text": "job %d: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "key",
+  "chunks": [
+   "key"
+  ],
+  "segments": [
+   {
+    "Text": "key",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "key.wav",
+  "chunks": [
+   "key.wav"
+  ],
+  "segments": [
+   {
+    "Text": "key.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "ledge!Seriously",
+  "chunks": [
+   "ledge! Seriously"
+  ],
+  "segments": [
+   {
+    "Text": "ledge!Seriously",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "leftover tmp file after successful cachePut: %s",
+  "chunks": [
+   "leftover tmp file after successful cachePut: %s"
+  ],
+  "segments": [
+   {
+    "Text": "leftover tmp file after successful cachePut: %s",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "llama-tts",
+  "chunks": [
+   "llama-tts"
+  ],
+  "segments": [
+   {
+    "Text": "llama-tts",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "llama-tts invoked %d times for %d jobs, want exactly 1",
+  "chunks": [
+   "llama-tts invoked %d times for %d jobs, want exactly 1"
+  ],
+  "segments": [
+   {
+    "Text": "llama-tts invoked %d times for %d jobs, want exactly 1",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "llama-tts invoked %d times total (priming + batch), want exactly 1 (priming only — the all-cache-hit batch should run no subprocess)",
+  "chunks": [
+   "llama-tts invoked %d times total (priming + batch),",
+   "want exactly 1 (priming only — the all-cache-hit batch should run no subprocess)"
+  ],
+  "segments": [
+   {
+    "Text": "llama-tts invoked %d times total (priming + batch), want exactly 1 (priming only — the all-cache-hit batch should run no subprocess)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "lowercase after period",
+  "chunks": [
+   "lowercase after period"
+  ],
+  "segments": [
+   {
+    "Text": "lowercase after period",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "messy real-world paragraph mixing multiple issues",
+  "chunks": [
+   "messy real-world paragraph mixing multiple issues"
+  ],
+  "segments": [
+   {
+    "Text": "messy real-world paragraph mixing multiple issues",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "might.It",
+  "chunks": [
+   "might. It"
+  ],
+  "segments": [
+   {
+    "Text": "might.It",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "mmproj.gguf",
+  "chunks": [
+   "mmproj.gguf"
+  ],
+  "segments": [
+   {
+    "Text": "mmproj.gguf",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "model",
+  "chunks": [
+   "model"
+  ],
+  "segments": [
+   {
+    "Text": "model",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "model.gguf",
+  "chunks": [
+   "model.gguf"
+  ],
+  "segments": [
+   {
+    "Text": "model.gguf",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "multiple consecutive glued sentences",
+  "chunks": [
+   "multiple consecutive glued sentences"
+  ],
+  "segments": [
+   {
+    "Text": "multiple consecutive glued sentences",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "newline separated glued sentences",
+  "chunks": [
+   "newline separated glued sentences"
+  ],
+  "segments": [
+   {
+    "Text": "newline separated glued sentences",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "nonexistent",
+  "chunks": [
+   "nonexistent"
+  ],
+  "segments": [
+   {
+    "Text": "nonexistent",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "now?!Yes",
+  "chunks": [
+   "now?! Yes"
+  ],
+  "segments": [
+   {
+    "Text": "now?!Yes",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "orphaned .tmp file should have been cleaned up by evictLRU",
+  "chunks": [
+   "orphaned .tmp file should have been cleaned up by evictLRU"
+  ],
+  "segments": [
+   {
+    "Text": "orphaned .tmp file should have been cleaned up by evictLRU",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "orphaned.wav.tmp",
+  "chunks": [
+   "orphaned.wav.tmp"
+  ],
+  "segments": [
+   {
+    "Text": "orphaned.wav.tmp",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "out.wav",
+  "chunks": [
+   "out.wav"
+  ],
+  "segments": [
+   {
+    "Text": "out.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "out0.wav",
+  "chunks": [
+   "out0.wav"
+  ],
+  "segments": [
+   {
+    "Text": "out0.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "out0: %v",
+  "chunks": [
+   "out0: %v"
+  ],
+  "segments": [
+   {
+    "Text": "out0: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "out0",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "out1.wav",
+  "chunks": [
+   "out1.wav"
+  ],
+  "segments": [
+   {
+    "Text": "out1.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "out1: %v",
+  "chunks": [
+   "out1: %v"
+  ],
+  "segments": [
+   {
+    "Text": "out1: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "out1",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "out2.wav",
+  "chunks": [
+   "out2.wav"
+  ],
+  "segments": [
+   {
+    "Text": "out2.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "out=\"\"\n",
+  "chunks": [
+   "out=\"\""
+  ],
+  "segments": [
+   {
+    "Text": "out=\"\"",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "parsePauseTag(%q) = (%d, %v), want (%d, %v)",
+  "chunks": [
+   "parsePauseTag(%q) = (%d, %v), want (%d, %v)"
+  ],
+  "segments": [
+   {
+    "Text": "parsePauseTag(%q) = (%d, %v), want (%d, %v)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "partial write",
+  "chunks": [
+   "partial write"
+  ],
+  "segments": [
+   {
+    "Text": "partial write",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "path/filepath",
+  "chunks": [
+   "path/filepath"
+  ],
+  "segments": [
+   {
+    "Text": "path/filepath",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "pause:-1s",
+  "chunks": [
+   "pause:-1s"
+  ],
+  "segments": [
+   {
+    "Text": "pause:-1s",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "pause",
+    "Text": "-1s",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "pause:-300ms",
+  "chunks": [
+   "pause:-300ms"
+  ],
+  "segments": [
+   {
+    "Text": "pause:-300ms",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "pause",
+    "Text": "-300ms",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "pause:-999s",
+  "chunks": [
+   "pause:-999s"
+  ],
+  "segments": [
+   {
+    "Text": "pause:-999s",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "pause",
+    "Text": "-999s",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "pause:2S",
+  "chunks": [
+   "pause:2S"
+  ],
+  "segments": [
+   {
+    "Text": "pause:2S",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "pause",
+    "Text": "2S",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "pause:2s",
+  "chunks": [
+   "pause:2s"
+  ],
+  "segments": [
+   {
+    "Text": "pause:2s",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "pause",
+    "Text": "2s",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "pause:500ms",
+  "chunks": [
+   "pause:500ms"
+  ],
+  "segments": [
+   {
+    "Text": "pause:500ms",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "pause",
+    "Text": "500ms",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "pause:abc",
+  "chunks": [
+   "pause:abc"
+  ],
+  "segments": [
+   {
+    "Text": "pause:abc",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "pause",
+    "Text": "abc",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "period glued to capital",
+  "chunks": [
+   "period glued to capital"
+  ],
+  "segments": [
+   {
+    "Text": "period glued to capital",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "primed.wav",
+  "chunks": [
+   "primed.wav"
+  ],
+  "segments": [
+   {
+    "Text": "primed.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "priming Synthesize: %v",
+  "chunks": [
+   "priming Synthesize: %v"
+  ],
+  "segments": [
+   {
+    "Text": "priming Synthesize: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "priming Synthesize",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "question mark glued to capital",
+  "chunks": [
+   "question mark glued to capital"
+  ],
+  "segments": [
+   {
+    "Text": "question mark glued to capital",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "ref-a.wav",
+  "chunks": [
+   "ref-a.wav"
+  ],
+  "segments": [
+   {
+    "Text": "ref-a.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "ref-b.wav",
+  "chunks": [
+   "ref-b.wav"
+  ],
+  "segments": [
+   {
+    "Text": "ref-b.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "region.Élise",
+  "chunks": [
+   "region. Élise"
+  ],
+  "segments": [
+   {
+    "Text": "region.Élise",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "restored content = %q",
+  "chunks": [
+   "restored content = %q"
+  ],
+  "segments": [
+   {
+    "Text": "restored content = %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "restored.wav",
+  "chunks": [
+   "restored.wav"
+  ],
+  "segments": [
+   {
+    "Text": "restored.wav",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "rune count across chunks = %d, want %d (hanzi lost/duplicated): %v",
+  "chunks": [
+   "rune count across chunks = %d, want %d (hanzi lost/duplicated): %v"
+  ],
+  "segments": [
+   {
+    "Text": "rune count across chunks = %d, want %d (hanzi lost/duplicated): %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "same audio bytes",
+  "chunks": [
+   "same audio bytes"
+  ],
+  "segments": [
+   {
+    "Text": "same audio bytes",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "same inputs produced different keys: %q vs %q",
+  "chunks": [
+   "same inputs produced different keys: %q vs %q"
+  ],
+  "segments": [
+   {
+    "Text": "same inputs produced different keys: %q vs %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "scriptfile=\"\"\n",
+  "chunks": [
+   "scriptfile=\"\""
+  ],
+  "segments": [
+   {
+    "Text": "scriptfile=\"\"",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "second call: %v",
+  "chunks": [
+   "second call: %v"
+  ],
+  "segments": [
+   {
+    "Text": "second call: %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "second call",
+    "Text": "%v",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "segment %d = %+v, want %+v",
+  "chunks": [
+   "segment %d = %+v, want %+v"
+  ],
+  "segments": [
+   {
+    "Text": "segment %d = %+v, want %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "segment 0 = %+v",
+  "chunks": [
+   "segment 0 = %+v"
+  ],
+  "segments": [
+   {
+    "Text": "segment 0 = %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "segment 0 GapBeforeMs = %d, want NoGap (no tag preceded it)",
+  "chunks": [
+   "segment 0 GapBeforeMs = %d, want NoGap (no tag preceded it)"
+  ],
+  "segments": [
+   {
+    "Text": "segment 0 GapBeforeMs = %d, want NoGap (no tag preceded it)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "segment 1 = %+v",
+  "chunks": [
+   "segment 1 = %+v"
+  ],
+  "segments": [
+   {
+    "Text": "segment 1 = %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "segment 1 GapBeforeMs = %d, want 0 (explicit [pause:0s], distinct from NoGap)",
+  "chunks": [
+   "segment 1 GapBeforeMs = %d, want 0 (explicit [pause:0s], distinct from NoGap)"
+  ],
+  "segments": [
+   {
+    "Text": "segment 1 GapBeforeMs = %d, want 0 (explicit",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": ", distinct from NoGap)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "separate.Fourth",
+  "chunks": [
+   "separate. Fourth"
+  ],
+  "segments": [
+   {
+    "Text": "separate.Fourth",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "shocked",
+  "chunks": [
+   "shocked"
+  ],
+  "segments": [
+   {
+    "Text": "shocked",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "shocked, a little panicked",
+  "chunks": [
+   "shocked, a little panicked"
+  ],
+  "segments": [
+   {
+    "Text": "shocked, a little panicked",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "single quote glued to capital",
+  "chunks": [
+   "single quote glued to capital"
+  ],
+  "segments": [
+   {
+    "Text": "single quote glued to capital",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "small",
+  "chunks": [
+   "small"
+  ],
+  "segments": [
+   {
+    "Text": "small",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "speaker = %q, want HOST",
+  "chunks": [
+   "speaker = %q, want HOST"
+  ],
+  "segments": [
+   {
+    "Text": "speaker = %q, want HOST",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "spoke: ",
+  "chunks": [
+   "spoke:"
+  ],
+  "segments": [
+   {
+    "Text": "spoke:",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "spoke: world\n",
+  "chunks": [
+   "spoke: world"
+  ],
+  "segments": [
+   {
+    "Text": "spoke: world",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "spoke",
+    "Text": "world",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "starting to preheat the oven for the very long bake ahead of us",
+  "chunks": [
+   "starting to preheat the oven for the very long bake ahead of us"
+  ],
+  "segments": [
+   {
+    "Text": "starting to preheat the oven for the very long bake ahead of us",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "strings",
+  "chunks": [
+   "strings"
+  ],
+  "segments": [
+   {
+    "Text": "strings",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "tag leaked into spoken text: %q",
+  "chunks": [
+   "tag leaked into spoken text: %q"
+  ],
+  "segments": [
+   {
+    "Text": "tag leaked into spoken text: %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "tag leaked into spoken text",
+    "Text": "%q",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "test setup bug: longClause has %d words, want \u003e %d",
+  "chunks": [
+   "test setup bug: longClause has %d words, want \u003e %d"
+  ],
+  "segments": [
+   {
+    "Text": "test setup bug: longClause has %d words, want \u003e %d",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": [
+   {
+    "Speaker": "test setup bug",
+    "Text": "longClause has %d words, want \u003e %d",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   }
+  ]
+ },
+ {
+  "input": "testing",
+  "chunks": [
+   "testing"
+  ],
+  "segments": [
+   {
+    "Text": "testing",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "testkey",
+  "chunks": [
+   "testkey"
+  ],
+  "segments": [
+   {
+    "Text": "testkey",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "text = %q",
+  "chunks": [
+   "text = %q"
+  ],
+  "segments": [
+   {
+    "Text": "text = %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "text = %q, want %q",
+  "chunks": [
+   "text = %q, want %q"
+  ],
+  "segments": [
+   {
+    "Text": "text = %q, want %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "text = %q, want both tags stripped",
+  "chunks": [
+   "text = %q, want both tags stripped"
+  ],
+  "segments": [
+   {
+    "Text": "text = %q, want both tags stripped",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "text = %q, want leading emotion tag left in place",
+  "chunks": [
+   "text = %q, want leading emotion tag left in place"
+  ],
+  "segments": [
+   {
+    "Text": "text = %q, want leading emotion tag left in place",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "text = %q, want tag stripped",
+  "chunks": [
+   "text = %q, want tag stripped"
+  ],
+  "segments": [
+   {
+    "Text": "text = %q, want tag stripped",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "text=\"\"\n",
+  "chunks": [
+   "text=\"\""
+  ],
+  "segments": [
+   {
+    "Text": "text=\"\"",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "time",
+  "chunks": [
+   "time"
+  ],
+  "segments": [
+   {
+    "Text": "time",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "too long",
+  "chunks": [
+   "too long"
+  ],
+  "segments": [
+   {
+    "Text": "too long",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "too.Fourth",
+  "chunks": [
+   "too. Fourth"
+  ],
+  "segments": [
+   {
+    "Text": "too.Fourth",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "total words across chunks = %d, want 60 (no words lost/duplicated)",
+  "chunks": [
+   "total words across chunks = %d, want 60 (no words lost/duplicated)"
+  ],
+  "segments": [
+   {
+    "Text": "total words across chunks = %d, want 60 (no words lost/duplicated)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "turn %d speaker = %q, want %q",
+  "chunks": [
+   "turn %d speaker = %q, want %q"
+  ],
+  "segments": [
+   {
+    "Text": "turn %d speaker = %q, want %q",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "turn 0 = %+v",
+  "chunks": [
+   "turn 0 = %+v"
+  ],
+  "segments": [
+   {
+    "Text": "turn 0 = %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "turn 0 GapBeforeMs = %d, want NoGap (no tag)",
+  "chunks": [
+   "turn 0 GapBeforeMs = %d, want NoGap (no tag)"
+  ],
+  "segments": [
+   {
+    "Text": "turn 0 GapBeforeMs = %d, want NoGap (no tag)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "turn 1 = %+v",
+  "chunks": [
+   "turn 1 = %+v"
+  ],
+  "segments": [
+   {
+    "Text": "turn 1 = %+v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "turn 1 GapBeforeMs = %d, want -300",
+  "chunks": [
+   "turn 1 GapBeforeMs = %d, want -300"
+  ],
+  "segments": [
+   {
+    "Text": "turn 1 GapBeforeMs = %d, want -300",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "turn 1 instruct = %q, want empty (no tag)",
+  "chunks": [
+   "turn 1 instruct = %q, want empty (no tag)"
+  ],
+  "segments": [
+   {
+    "Text": "turn 1 instruct = %q, want empty (no tag)",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "turn 1 text = %q, want tag stripped",
+  "chunks": [
+   "turn 1 text = %q, want tag stripped"
+  ],
+  "segments": [
+   {
+    "Text": "turn 1 text = %q, want tag stripped",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "velocity.Not",
+  "chunks": [
+   "velocity. Not"
+  ],
+  "segments": [
+   {
+    "Text": "velocity.Not",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "version number",
+  "chunks": [
+   "version number"
+  ],
+  "segments": [
+   {
+    "Text": "version number",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "vs.Arsenal",
+  "chunks": [
+   "vs.Arsenal"
+  ],
+  "segments": [
+   {
+    "Text": "vs.Arsenal",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "we need to gather every single ingredient listed on the recipe card before we can even think about ",
+  "chunks": [
+   "we need to gather every single ingredient listed on the recipe card before we can even think about"
+  ],
+  "segments": [
+   {
+    "Text": "we need to gather every single ingredient listed on the recipe card before we can even think about",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "week.\"Nobody",
+  "chunks": [
+   "week.\" Nobody"
+  ],
+  "segments": [
+   {
+    "Text": "week.\"Nobody",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "week.Tell",
+  "chunks": [
+   "week. Tell"
+  ],
+  "segments": [
+   {
+    "Text": "week.Tell",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "week.With",
+  "chunks": [
+   "week. With"
+  ],
+  "segments": [
+   {
+    "Text": "week.With",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "week?Because",
+  "chunks": [
+   "week? Because"
+  ],
+  "segments": [
+   {
+    "Text": "week?Because",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "while [ \"$#\" -gt 0 ]; do\n",
+  "chunks": [
+   "while [ \"$#\" -gt 0 ]; do"
+  ],
+  "segments": [
+   {
+    "Text": "while",
+    "Instruct": "",
+    "GapBeforeMs": -1073741824
+   },
+   {
+    "Text": "; do",
+    "Instruct": " \"$#\" -gt 0 ",
+    "GapBeforeMs": -1073741824
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "while...Eventually",
+  "chunks": [
+   "while... Eventually"
+  ],
+  "segments": [
+   {
+    "Text": "while...Eventually",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "whisper",
+  "chunks": [
+   "whisper"
+  ],
+  "segments": [
+   {
+    "Text": "whisper",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "word ",
+  "chunks": [
+   "word"
+  ],
+  "segments": [
+   {
+    "Text": "word",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "word count = %d, want %d",
+  "chunks": [
+   "word count = %d, want %d"
+  ],
+  "segments": [
+   {
+    "Text": "word count = %d, want %d",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "word count = %d, want %d (words lost/duplicated): %v",
+  "chunks": [
+   "word count = %d, want %d (words lost/duplicated): %v"
+  ],
+  "segments": [
+   {
+    "Text": "word count = %d, want %d (words lost/duplicated): %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "word count across chunks = %d, want %d",
+  "chunks": [
+   "word count across chunks = %d, want %d"
+  ],
+  "segments": [
+   {
+    "Text": "word count across chunks = %d, want %d",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "word count across chunks = %d, want %d (words lost/duplicated): %v",
+  "chunks": [
+   "word count across chunks = %d, want %d (words lost/duplicated): %v"
+  ],
+  "segments": [
+   {
+    "Text": "word count across chunks = %d, want %d (words lost/duplicated): %v",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word end.",
+  "chunks": [
+   "word word word word word word word word word word word word word word word word word word word word",
+   "word word word word word word word word word word word word word word word word word word word word",
+   "word word word word word end."
+  ],
+  "segments": [
+   {
+    "Text": "word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word end.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "wordCount(6 hanzi) = %d, want 6",
+  "chunks": [
+   "wordCount(6 hanzi) = %d, want 6"
+  ],
+  "segments": [
+   {
+    "Text": "wordCount(6 hanzi) = %d, want 6",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "wordCount(mixed) = %d, want 4",
+  "chunks": [
+   "wordCount(mixed) = %d, want 4"
+  ],
+  "segments": [
+   {
+    "Text": "wordCount(mixed) = %d, want 4",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "words.Followed",
+  "chunks": [
+   "words. Followed"
+  ],
+  "segments": [
+   {
+    "Text": "words.Followed",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "world",
+  "chunks": [
+   "world"
+  ],
+  "segments": [
+   {
+    "Text": "world",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "you!Not",
+  "chunks": [
+   "you! Not"
+  ],
+  "segments": [
+   {
+    "Text": "you!Not",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "Мы закончили работу над проектом на этой неделе.Команда очень довольна результатом и планирует отдохнуть.",
+  "chunks": [
+   "Мы закончили работу над проектом на этой неделе.",
+   "Команда очень довольна результатом и планирует отдохнуть."
+  ],
+  "segments": [
+   {
+    "Text": "Мы закончили работу над проектом на этой неделе.Команда очень довольна результатом и планирует отдохнуть.",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "неделе.Команда",
+  "chunks": [
+   "неделе. Команда"
+  ],
+  "segments": [
+   {
+    "Text": "неделе.Команда",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "€5k?",
+  "chunks": [
+   "€5k?"
+  ],
+  "segments": [
+   {
+    "Text": "€5k?",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "。这是第二句话",
+  "chunks": [
+   "。 这是第二句话"
+  ],
+  "segments": [
+   {
+    "Text": "。这是第二句话",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "今天天气很好",
+  "chunks": [
+   "今天天气很好"
+  ],
+  "segments": [
+   {
+    "Text": "今天天气很好",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "今天天气很好。我们决定去公园散步。路上遇到了很多朋友，大家聊得很开心。晚上回家后开始准备晚饭。这是一个非常愉快的周末。",
+  "chunks": [
+   "今天天气很好。 我们决定去公园散步。",
+   "路上遇到了很多朋友，大家聊得很开心。",
+   "晚上回家后开始准备晚饭。",
+   "这是一个非常愉快的周末。"
+  ],
+  "segments": [
+   {
+    "Text": "今天天气很好。我们决定去公园散步。路上遇到了很多朋友，大家聊得很开心。晚上回家后开始准备晚饭。这是一个非常愉快的周末。",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。",
+  "chunks": [
+   "这是一个测试句子。",
+   "这是一个测试句子。",
+   "这是一个测试句子。",
+   "这是一个测试句子。",
+   "这是一个测试句子。",
+   "这是一个测试句子。",
+   "这是一个测试句子。",
+   "这是一个测试句子。"
+  ],
+  "segments": [
+   {
+    "Text": "这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。这是一个测试句子。",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ },
+ {
+  "input": "这是第一句话，讲的是产品的核心功能。这是第二句话，紧跟在句号后面没有空格，讲的是用户反馈和市场验证的重要性。",
+  "chunks": [
+   "这是第一句话，讲的是产品的核心功能。",
+   "这是第二句话，紧跟在句号后面没有空格，讲的是用户反馈和市场验证的重要性。"
+  ],
+  "segments": [
+   {
+    "Text": "这是第一句话，讲的是产品的核心功能。这是第二句话，紧跟在句号后面没有空格，讲的是用户反馈和市场验证的重要性。",
+    "Instruct": "",
+    "GapBeforeMs": 0
+   }
+  ],
+  "turns": null
+ }
+]

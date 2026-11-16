@@ -1,0 +1,12 @@
+[package]
+name = "llama-sys"
+version = "0.1.0"
+description = "Raw FFI bindings to llama.cpp's libllama and libmtmd (audio generation API)."
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+links = "llama"
+
+[build-dependencies]
+bindgen = "0.72"

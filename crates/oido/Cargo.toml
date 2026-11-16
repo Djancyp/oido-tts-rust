@@ -1,0 +1,28 @@
+[package]
+name = "oido"
+version = "0.1.0"
+description = "Local voice-cloning text-to-speech: CLI and MCP server."
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+# Direct dependency only so build.rs receives DEP_LLAMA_LIB_DIR for the rpath.
+llama-sys.workspace = true
+oido-core.workspace = true
+oido-engine.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+dirs.workspace = true
+rmcp.workspace = true
+schemars.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tempfile.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+[lints]
+workspace = true

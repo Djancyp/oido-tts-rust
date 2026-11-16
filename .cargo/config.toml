@@ -1,0 +1,4 @@
+# Default: the vendored, patched llama.cpp in third_party/ (see patches/llama.cpp), built with CMake (shared libs).
+# Override by exporting LLAMA_CPP_DIR (and optionally LLAMA_LIB_DIR).
+[env]
+LLAMA_CPP_DIR = { value = "third_party/llama.cpp", relative = true, force = false }

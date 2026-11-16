@@ -1,0 +1,16 @@
+[package]
+name = "oido-engine"
+version = "0.1.0"
+description = "Resident TTS model: loads a llama.cpp/mtmd audio-generation model once and synthesizes speech from it."
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+llama-sys.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true
