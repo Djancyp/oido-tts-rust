@@ -252,5 +252,8 @@ fn report(kind: &str, out: &Path, r: &Rendered, plan: &Plan, instruct_given: boo
             "\nNote: style tags and `instruct` are not supported by this engine and were ignored.",
         );
     }
+    for note in &r.notes {
+        let _ = write!(s, "\nNote: {note}");
+    }
     s
 }

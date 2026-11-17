@@ -8,7 +8,7 @@ use anyhow::{Context, Result};
 use oido_core::audio::{self, Clip};
 use oido_core::cache::{Cache, CacheKey, CacheKeyBuilder};
 use oido_core::jobs::Plan;
-use oido_engine::{Engine, EngineConfig, EngineError, Request};
+use oido_engine::{Engine, EngineConfig, EngineError, ModelKind, Request};
 
 /// Seed used when none is given. Qwen3-TTS Base has no voice identity without a reference
 /// clip, so the RNG picks the speaker; a fixed seed keeps that speaker stable across runs.
@@ -38,6 +38,8 @@ pub struct Rendered {
     pub cached: usize,
     /// Jobs that hit the frame cap and may be cut off.
     pub truncated: usize,
+    /// Things the caller should know, such as ignored options.
+    pub notes: Vec<String>,
 }
 
 /// A loaded engine plus the cache.
@@ -88,6 +90,21 @@ impl Synth {
     ) -> Result<Rendered> {
         anyhow::ensure!(!plan.jobs.is_empty(), "nothing to synthesize");
         let total = plan.jobs.len();
+        let mut notes = Vec::new();
+        if self.engine.kind() == ModelKind::PocketTts {
+            let unvoiced = plan.jobs.iter().filter(|j| j.voice.is_none()).count();
+            anyhow::ensure!(
+                unvoiced == 0,
+                "Pocket TTS has no built-in voice and needs a reference clip: {unvoiced} of {total} \
+                 chunks have none (give a voice, or one for every podcast speaker)"
+            );
+            if opts.lang.is_some() {
+                notes.push(
+                    "Pocket TTS ignores lang: the language is fixed by the loaded model."
+                        .to_owned(),
+                );
+            }
+        }
         let mut clips = Vec::with_capacity(total);
         let mut anchor: Option<tempfile::TempPath> = None;
         let (mut cached, mut truncated) = (0, 0);
@@ -153,6 +170,7 @@ impl Synth {
             jobs: total,
             cached,
             truncated,
+            notes,
         })
     }
 

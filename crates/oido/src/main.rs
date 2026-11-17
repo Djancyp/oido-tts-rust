@@ -1,6 +1,7 @@
 //! `oido`: local voice-cloning text-to-speech, as a CLI and an MCP server.
 
 mod mcp;
+mod models;
 mod synth;
 mod voices;
 mod worker;
@@ -49,18 +50,37 @@ struct ModelArgs {
     /// Backbone layers to offload to the GPU backend.
     #[arg(long, global = true)]
     gpu_layers: Option<i32>,
+    /// Model family to find when no paths are given (default: Qwen if downloaded, else Pocket).
+    #[arg(long, value_enum, env = "OIDO_ENGINE", global = true)]
+    engine: Option<models::Family>,
 }
 
 impl ModelArgs {
     fn config(&self) -> Result<EngineConfig> {
-        let model = self
-            .model
-            .clone()
-            .context("no model: pass --model or set TTS_MODEL_PATH")?;
-        let mmproj = self
-            .mmproj
-            .clone()
-            .context("no mmproj: pass --mmproj or set TTS_MMPROJ_PATH")?;
+        let (model, mmproj) = match (&self.model, &self.mmproj) {
+            (Some(model), Some(mmproj)) => {
+                if let Some(engine) = self.engine {
+                    let name = model.file_name().and_then(|n| n.to_str()).unwrap_or("");
+                    anyhow::ensure!(
+                        engine.matches(name),
+                        "--engine {engine:?} does not match model {} (from --model or TTS_MODEL_PATH)",
+                        model.display()
+                    );
+                }
+                (model.clone(), mmproj.clone())
+            }
+            (None, None) => models::discover(self.engine).with_context(|| match self.engine {
+                Some(models::Family::Pocket) => "no Pocket TTS model found in ~/.local/share/oido/models; \
+                     convert one (see docs/pocket-tts.md)"
+                    .to_owned(),
+                _ => "no model: pass --model/--mmproj, set TTS_MODEL_PATH/TTS_MMPROJ_PATH, or download \
+                     one with `hf download ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF`"
+                    .to_owned(),
+            })?,
+            _ => anyhow::bail!(
+                "pass both --model and --mmproj (or TTS_MODEL_PATH and TTS_MMPROJ_PATH)"
+            ),
+        };
         let mut config = EngineConfig::new(model, mmproj);
         config.n_ctx = self.ctx;
         config.threads = self.threads;
@@ -269,6 +289,9 @@ fn render_to_file(
             "warning: {} chunk(s) hit the length cap and may be cut off",
             rendered.truncated
         );
+    }
+    for note in &rendered.notes {
+        eprintln!("note: {note}");
     }
     Ok(())
 }

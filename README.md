@@ -38,7 +38,14 @@ export TTS_MODEL_PATH=/path/to/Qwen3-TTS-12Hz-1.7B-Base-Q4_K_M.gguf
 export TTS_MMPROJ_PATH=/path/to/mmproj-Qwen3-TTS-12Hz-1.7B-Base-Q8_0.gguf
 ```
 
-(`--model` / `--mmproj` flags work too.)
+(`--model` / `--mmproj` flags work too.) With neither set, oido uses a Qwen3-TTS (or Pocket
+TTS) GGUF found in the Hugging Face cache (`$HF_HUB_CACHE`, `$HF_HOME/hub`, or
+`~/.cache/huggingface/hub`), so after `hf download ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF`
+nothing needs configuring.
+
+`--engine qwen|pocket` (or `OIDO_ENGINE`) picks the model family to find. Pocket TTS is about
+5x faster at the same voice fidelity, but each model speaks one language and it always
+needs a voice clip; see [docs/pocket-tts.md](docs/pocket-tts.md).
 
 ## Use
 
