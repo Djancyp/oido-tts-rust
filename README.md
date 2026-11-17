@@ -73,22 +73,58 @@ request stays one speaker.
 
 ### MCP
 
+`oido mcp` serves the tools over stdio. Run one server per engine: `oido-tts` for Qwen3-TTS
+(multilingual, voice optional) and `oido-tts-pocket` for Pocket TTS (about 5x faster, one
+language, voice required). Both find their model automatically (see [Model](#model)); Pocket
+needs the converted model from [docs/pocket-tts.md](docs/pocket-tts.md) first.
+
+**Claude Code** (`-s user` = every project, `-s local` = current project only):
+
+```sh
+claude mcp add oido-tts -s user -- ~/.local/bin/oido mcp
+claude mcp add oido-tts-pocket -s user -- ~/.local/bin/oido --engine pocket mcp
+claude mcp get oido-tts-pocket          # status
+claude mcp remove oido-tts-pocket -s user
+```
+
+Open sessions pick up a new server after `/mcp` → reconnect, or a restart.
+
+**Other clients** (Claude Desktop, Cursor, …), in the client's MCP config:
+
 ```json
 {
   "mcpServers": {
     "oido-tts": {
-      "command": "/path/to/oido",
-      "args": ["mcp"],
-      "env": { "TTS_MODEL_PATH": "...", "TTS_MMPROJ_PATH": "..." }
+      "command": "/home/you/.local/bin/oido",
+      "args": ["mcp"]
+    },
+    "oido-tts-pocket": {
+      "command": "/home/you/.local/bin/oido",
+      "args": ["--engine", "pocket", "mcp"]
     }
   }
 }
 ```
 
-Tools: `synthesize_speech` (`text`, `lang`, `voice`, `speaker_file`, `output_dir`),
-`build_podcast` (`script`, `voices`, `lang`, `output_dir`), `list_voices`. They return the
-path of the written wav. The model loads on the first call and unloads after 10 idle
-minutes (`oido mcp --idle-unload SECS`, 0 = never).
+To pin exact files instead of auto-discovery, add
+`"env": { "TTS_MODEL_PATH": "...", "TTS_MMPROJ_PATH": "..." }` to a server.
+
+**Tools** (same on both servers):
+
+| Tool | Arguments |
+|---|---|
+| `synthesize_speech` | `text`, `voice` (saved name) or `speaker_file` (clip path), `lang`, `output_dir` (absolute) |
+| `build_podcast` | `script` (`Speaker: line` paragraphs), `voices` (speaker → name or path), `lang`, `output_dir` |
+| `list_voices` | none |
+
+Each call writes a wav and returns its path, as text and as structured `{"path": ...}`;
+without `output_dir` files go to `~/.cache/oido-tts/mcp/`. The model loads on the first call
+and unloads after 10 idle minutes (`oido mcp --idle-unload SECS`, 0 = never).
+
+**Using them:** ask in plain language, e.g. *"Using oido-tts-pocket, say 'Welcome back to
+the channel' with ~/Music/voice.mp3"*, or *"with voice alice"* after
+`oido voice add alice ~/Music/voice.mp3`. With Pocket, always name a voice (every speaker
+in a podcast needs one); `lang` is ignored because the model's language is fixed.
 
 ## Not supported
 
